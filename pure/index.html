@@ -13,19 +13,49 @@
     a:hover {text-decoration: none;}
     a:active {text-decoration: none;}
 
-    #left-container {
-      width: 25%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      background: #3D4F5D;
+    @media screen and (min-width: 800px) {
+      #left-container {
+        width: 25%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #3D4F5D;
+      }
+
+      #left-content {
+        text-align: right;
+        margin: 80% 2em 0;
+      }
+
+      #right-container {
+        margin-left: 25%;
+      }
+
+      .post-image {
+        float: left;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
     }
+
+    @media screen and (max-width: 800px) {
+      #left-container {
+        width: 100%;
+        background: #3D4F5D;
+      }
+
+      #left-content {
+        padding: 50px;
+        text-align: center;
+      }
+    }
+
     #left-content {
       color: #fff;
-      text-align: right;
       text-transform: uppercase;
-      margin: 80% 2em 0;
     }
 
     #left-content a {
@@ -37,7 +67,6 @@
     }
 
     #right-container {
-      margin-left: 25%;
       background: #FFF;
       overflow: hidden;
       padding: 10px 30px;
@@ -87,11 +116,6 @@
 
     .post-image {
       position: relative;
-      float: left;
-      width: 50%;
-      padding: 0;
-      margin: 0;
-      border: none;
     }
 
     .post-image img {
