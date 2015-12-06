@@ -437,5 +437,153 @@ Play the game on Codepen</a></p>
 </section>
 <!-- section: end -->
 
+<!-- section -->
+<style type="text/css">
+  #signup {
+    background: #094377;
+    padding: 30px 50px;
+  }
+
+  #signup::after {
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    visibility: hidden;
+  }
+
+  #signup-download, #signup-form {
+    float: left;
+  }
+
+  #signup-download {
+    height: 200px;
+    width: 460px;
+    background: url("https://mozorg.cdn.mozilla.net/media/img/firefox/developer/footer-logo.a4a5ed33ae4d.png") no-repeat;
+    padding-left: 30px;
+  }
+  #signup-download h3, #signup-form h3 {
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #fff;
+  }
+  #signup-form {
+    width: 400px;
+  }
+
+  #signup-form input[type="email"] {
+    margin-top: 10px;
+    width: 300px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #fff;
+  }
+
+  .form-btn {
+    border: 1px solid #fff;
+    width: 320px;
+  }
+
+  .form-btn::after {
+    content: "\00A0\00BB";
+  }
+
+</style>
+<section id="signup">
+  <div class="container">
+    <div id="signup-download">
+      <h3>Choose Firefox</h3>
+      <div class="btn green-btn">Free Download</div>
+      <div class="download-meta">
+        <a href="#">Systems &amp; Languages</a> |
+        <a href="#">What's New</a> |
+        <a href="#">Privacy</a>
+      </div>
+
+    </div>
+    <form id="signup-form">
+      <h3>Firefox Apps &amp; Hacks</h3>
+      <input type="email" name="email" placeholder="Your Email Here" />
+      <div class="btn form-btn">Sign me up</div>
+    </form>
+  </div>
+</section>
+<!-- section: end -->
+
+<!-- footer -->
+<style type="text/css">
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+  }
+  footer::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  #footer-left, #footer-middle, #footer-right {
+    float: left;
+    width: 300px;
+  }
+  #footer-logo {
+    background: url("https://mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.fafef0912042.png");
+    display: inline-block;
+    overflow: hidden;
+    width: 93px;
+    height: 24px;
+    text-indent: 120%;
+  }
+  #footer-copyright {
+    font-size: 0.7em;
+  }
+  #footer-links li {
+    float: left;
+    list-style: none;
+    font-size: 0.8em;
+  }
+  #footer-links .clear {
+    clear: both;
+  }
+  #footer-links .margin {
+    margin-top: 10px;
+  }
+  #footer-links .lead::before {
+    content: "\00A0\00B7\00A0";
+  }
+  #footer-right #social {
+    list-style: none;
+    font-size: 0.7em;
+  }
+</style>
+<footer>
+  <div class="container">
+    <div id="footer-left">
+      <a id="footer-logo" href="#">Mozilla</a>
+      <p id="footer-copyright">Portions of this content are ©1998–2015 by individual mozilla.org contributors. Content available under a <a class="link" href="#">Creative Commons licence</a>.</p>
+    </div>
+    <div id="footer-middle">
+      <ul id="footer-links">
+        <li><a href="#">Contact Us</a></li>
+        <li class="lead"><a href="#">Partner with Us</a></li>
+        <li class="clear"><a href="#">Donate</a></li>
+        <li class="lead"><a href="#">Firefox Friends</a></li>
+        <li class="clear margin"><a href="#">Report Trademark Abuse</a></li>
+      </ul>
+    </div>
+    <div id="footer-right">
+      <ul id="social">
+        <li>Mozilla</li>
+        <li>Firefox</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- footer: end -->
+
 </body>
 </html>
