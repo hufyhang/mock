@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mockup: Firefox Developer Edition</title>
+  <style type="text/css">
+    @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      src: url("./OpenSans-Regular-webfont.2696e36f12c5.woff") format("woff");
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Open Sans", arial, sans-serif;
+      font-weight: lighter;
+    }
+    body {background: #333;}
+    a {color: #999; text-decoration: none;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+
+    body {
+      border-top: 3px solid #fff;
+      background-image: radial-gradient(ellipse farthest-side at top left,#00549e 0,rgba(0,0,0,0) 100%);
+      background-size: 100% 500px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .container {
+      padding: 0 30px 0 80px;
+    }
+
+    #header-container {
+      font-size: 15px;
+      float: right;
+    }
+    header nav {
+      float: left;
+    }
+
+    header nav ul {
+      list-style: none;
+    }
+
+    header nav ul li {
+      text-transform: uppercase;
+      float: left;
+      margin: 0 10px;
+    }
+
+    .header-link {
+      display: inline-block;
+      padding-top: 5px;
+      color: #fff;
+    }
+
+    .header-link-mozilla {
+      padding-top: 0;
+      background: url("https://mozorg.cdn.mozilla.net/media/img/tabzilla/tabzilla-static.953a65a1f4a4.png") no-repeat;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-indent: 120%;
+      width: 200px;
+      height: 40px;
+    }
+
+    header nav ul::after {
+      clear: both;
+    }
+
+    #logo {
+      margin-top: 30px;
+    }
+
+    header::after {
+      clear: both;
+      display: block;
+      content: "";
+      height: 70px;
+      visibility: hidden;
+    }
+
+    section {
+      text-align: center;
+    }
+
+    section h1 {
+      font-size: 2.8em;
+      color: #fff;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #CACACA;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+
+    .green-btn {
+      background: #16da2e;
+      text-shadow: 0 -1px 1px grey;
+    }
+
+    .download-meta {
+      color: #999;
+      font-size: 10px;
+    }
+
+    #introduction .green-btn {
+      margin-top: 50px;
+    }
+
+    section p {
+      color: #999;
+      margin: 10px;
+    }
+
+    .more {
+      color: #55a1d7;
+    }
+    .more::after {
+      content: "\00A0\00BB";
+    }
+
+    .screenshot {
+      margin: 20px 0;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px black;
+    }
+
+    .column-item {
+      float: left;
+      color: #a2b4c7;
+      width: 250px;
+      margin: 0 10px;
+      font-size: 0.9em;
+    }
+
+    .column-item h3 {
+      color: #fff;
+      font-size: 2em;
+      text-transform: capitalize;
+    }
+
+    .columns {
+      display: inline-block;
+      position: relative;
+      float: left;
+      left: 50%;
+    }
+
+    .columns::after {
+      display: block;
+      content: "";
+      height: 0;
+      visibility: hidden;
+    }
+
+    .columns-inner-wrapper {
+      position: relative;
+      float: left;
+      left: -50%;
+    }
+
+    .columns-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    section::after {
+      display: block;
+      content: "";
+      height: 20px;
+      visibility: hidden;
+    }
+
+    section#tools {
+      background: url("https://mozorg.cdn.mozilla.net/media/img/firefox/developer/tools-background.92c3d78d86c8.jpg") 50% 50% no-repeat;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .para {
+      font-size: 2em;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .para p {
+     font-size: 25px;
+     width: 600px;
+     margin: 0 auto;
+     margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+<!-- header -->
+<header class="container">
+  <div id="header-container">
+    <nav>
+      <ul>
+        <li><a class="header-link" href="#">firefox</a></li>
+        <li><a class="header-link" href="#">add-ons</a></li>
+        <li><a class="header-link" href="#">support</a></li>
+        <li><a class="header-link header-link-mozilla" href="#">Mozilla</a></li>
+      </ul>
+    </nav>
+  </div>
+  <img id="logo" src="https://mozorg.cdn.mozilla.net/media/img/firefox/developer/title.cc24bed4ace7.png" alt="Mozilla Logo" width="220" height="84"/>
+</header>
+<!-- header: end -->
+
+<!-- section -->
+
+<section id="introduction" class="container">
+  <h1>Built for those who build the Web</h1>
+  <h2>The only browser made for developers like you.</h2>
+  <div class="btn green-btn">Free Download</div>
+  <div class="download-meta">
+    <a href="#">Systems &amp; Languages</a> |
+    <a href="#">What's New</a> |
+    <a href="#">Privacy</a>
+  </div>
+  <p>
+    Firefox Developer Edition automatically sends feedback to Mozilla.
+    <a class="more" href="#">Learn more</a>
+  </p>
+  <img src="https://mozorg.cdn.mozilla.net/media/img/firefox/developer/challenger-hero.ce8f45c39031.png" width="832" height="auto" alt="screenshot" class="screenshot" />
+
+  <div class="columns-container">
+
+  <div class="columns">
+    <div class="columns-inner-wrapper">
+      <div class="column-item">
+       <h3>designed for developers</h3>
+       the only browser made just for developers, firefox developer edition was created with your workflow in mind. build, test, scale and more all from one place, for the first time ever.
+     </div>
+     <div class="column-item">
+       <h3>debug any browser</h3>
+       inspect and debug your app across any browser or device with valence — a powerful, pre-installed extension that you’ll only find in firefox developer edition.
+     </div>
+     <div class="column-item">
+      <h3>pixel-perfect coding</h3>
+      target screen sizes with the responsive design view and tweak your css on the fly with the built-in style editor for pixel-perfect coding.
+    </div>
+    </div>
+</div>
+  </div>
+
+</section>
+<!-- section: end -->
+<section id="tools">
+  <div class="para">
+    <h3>All your favourite dev tools and more</h3>
+    <p>Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.</p>
+  </div>
+</section>
+</body>
+</html>
