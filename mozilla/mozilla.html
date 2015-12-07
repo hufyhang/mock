@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- original: https://www.mozilla.org/en-US/ -->
+  <title>Mockup: Mozilla.org</title>
+  <style type="text/css">
+    @font-face {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      src: url("./OpenSans-Regular-webfont.2696e36f12c5.woff") format("woff");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", arial, sans-serif;
+    }
+    body {
+      border-top: 2px solid #fff;
+    }
+    .clearfix::after {
+      clear: both;
+      display: block;
+      content: "";
+      height: 0;
+      visibility: hidden;
+    }
+
+    a {text-decoration: none;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+
+  </style>
+</head>
+<body>
+  <style type="text/css">
+    header {
+      background: #C13832;
+      color: #fff;
+      height: 200px;
+      text-align: center;
+    }
+    .container {
+      position: relative;
+      display: block;
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    #top-bar {
+      width: 100%;
+    }
+
+    #top-links {
+      float: right;
+      list-style: none;
+      margin-right: 60px;
+    }
+
+    .top-link {
+      float: left;
+      text-transform: uppercase;
+      margin: 10px;
+    }
+
+    .top-link a {
+      font-size: 0.8em;
+      color: #fff;
+    }
+
+    .linked-logo {
+      display: inline-block;
+      background: url("https://mozorg.cdn.mozilla.net/media/img/tabzilla/tabzilla-static.953a65a1f4a4.png") no-repeat;
+      width: 147px;
+      height: 37px;
+      text-indent: 120%;
+      overflow: hidden;
+      margin-top: -10px;
+    }
+
+    header img {
+      margin-top: 30px;
+    }
+
+
+  </style>
+  <header class="clearfix">
+    <div id="top-bar" class="container clearfix">
+      <ul id="top-links">
+        <li class="top-link"><a href="#">about</a></li>
+        <li class="top-link"><a href="#">participate</a></li>
+        <li class="top-link"><a href="#">firefox</a></li>
+        <li class="top-link"><a href="#">donate</a></li>
+        <li class="top-link"><a class="linked-logo" href="#">mozilla</a></li>
+      </ul>
+    </div>
+    <img id="logo" alt="logo" width="313" height="82" src="https://mozorg.cdn.mozilla.net/media/img/home/voices/mozilla-wordmark-white.20d134cd8af7.png"></img>
+  </header>
+
+<!-- section -->
+  <style type="text/css">
+    section#promotion {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding: 20px 0 20px 0;
+      color: #fff;
+    }
+    section#promotion .container {
+      height: 450px;
+      z-index: 1;
+    }
+    section#promotion ul {
+      list-style: none;
+    }
+    section#promotion .container::after {
+      display: block;
+      content: "";
+      clear: both;
+      height: 0;
+      visibility: hidden;
+    }
+
+    section#promotion #private {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 420px;
+      width: 280px;
+      background: #5F6065;
+      text-align: center;
+      padding: 20px 10px;
+      z-index: 2;
+    }
+
+    section#promotion h3.large-font {
+      font-size: 2.5em;
+      font-weight: lighter;
+    }
+    section#promotion h3.small-font {
+      font-size: 1.6em;
+      font-weight: lighter;
+    }
+
+    section#promotion #promotion-face {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      height: 100%;
+      left: 50%;
+      margin-left: -630px;
+      width: 1260px;
+      background: #fff url("https://mozorg.cdn.mozilla.net/media/img/home/voices/mosaic-background.565019b6e6bc.jpg") -10px 20px repeat;
+      z-index: -1;
+
+    }
+
+    section#promotion #private h3 {
+      background: url("https://mozorg.cdn.mozilla.net/media/img/home/voices/promos/private-browsing/private-browsing.e0f1ae841f3b.svg") center 45px no-repeat;
+      padding-top: 130px;
+    }
+
+    section#promotion #advocacy {
+      position: absolute;
+      top: 0;
+      left: 320px;
+      width: 150px;
+      height: 100px;
+      background: orange;
+      padding: 20px 30px 20px 120px;
+      background: orange url("https://mozorg.cdn.mozilla.net/media/img/home/voices/promos/advocacy/advocacy-logo.45ed6131fdb1.png") 10px no-repeat;
+    }
+
+    section#promotion #firefox {
+      position: absolute;
+      top: 160px;
+      left: 480px;
+      width: 150px;
+      height: 90px;
+      background: green;
+      padding: 30px 120px 20px 30px;
+      background: green url("https://mozorg.cdn.mozilla.net/media/img/home/voices/promos/download-firefox/firefox-logo.d99a8d78a049.png") 180px -10px no-repeat;
+
+    }
+  </style>
+  <section id="promotion">
+    <ul class="container">
+      <li id="private">
+        <h3 class="large-font">Introducting the new Private Browsing</h2>
+      </li>
+
+      <li id="advocacy">
+        <h3 class="small-font">Learn about Mozilla Advocacy</h3>
+      </li>
+
+      <li id="firefox">
+        <h3 class="small-font">Download Firefox</h3>
+      </li>
+
+    </ul>
+    <div id="promotion-face"></div>
+  </section>
+  <!-- section: end -->
+
+  <!-- section -->
+  <style type="text/css">
+    section#download {
+      background: #565A5C;
+      padding: 20px 0;
+      color: #fff;
+      overflow: hidden;
+    }
+    section#download .container {
+      display: inline-block;
+      position: relative;
+      float: left;
+      left: 50%;
+    }
+    section#download #float-wrapper {
+      position: relative;
+      left: -50%;
+    }
+
+    section#download #float-wrapper .float-item {
+      float: left;
+      width: 260px;
+      margin-right: 50px;
+    }
+
+    section#download #inline-logo {
+      height: 200px;
+      color: #fff;
+    }
+
+    section#download p {
+      font-size: 1.7em;
+      margin-left: 20px;
+      margin-right: -100px;
+    }
+
+    section#download .btn {
+      color: #fff;
+      display: block;
+      background: green;
+      text-transform: uppercase;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 5px;
+      margin-left: 100px;
+      margin: 30px auto;
+    }
+
+  </style>
+  <section id="download" class="clearfix">
+    <div class="container">
+      <div id="float-wrapper">
+
+        <div class="float-item"><a href="#" id="inline-logo"><img width="300px" height="120px" src="https://mozorg.cdn.mozilla.net/media/img/home/voices/firefox-logo-wordmark-white.de059cc90a4e.png" /></a></div>
+        <div class="float-item">
+          <p>Committed to you, your privacy and an open Web</p>
+        </div>
+        <div class="float-item">
+          <a href="#" class="btn">free download</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- section: end -->
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+</body>
+</html>
