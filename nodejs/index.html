@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Original: https://nodejs.org/en/ -->
+  <title>Mockup: Node.js</title>
+  <style type="text/css">
+    * {padding: 0; margin: 0; font-family: sans-serif;}
+    .clearfix {
+      overflow: hidden;
+    }
+    .clearfix::after {
+      clear: both;
+      content: "";
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+    a {text-decoration: none;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+  </style>
+</head>
+<body>
+<!-- section -->
+  <style type="text/css">
+    header {
+      background: #333;
+      padding: 20px 0 20px 0;
+      text-align: center;
+    }
+
+    header #logo-link {
+      display: block;
+    }
+
+    header nav {
+      position: relative;
+      float: left;
+      left: 50%;
+      margin-top: 10px;
+    }
+
+    header nav #nav-links {
+      position:relative;
+      float: left;
+      left: -50%;
+      list-style: none;
+    }
+
+    header nav .nav-link {
+      display: inline-block;
+      float: left;
+    }
+
+    header nav .nav-link a {
+      color: #ccc;
+      text-transform: uppercase;
+      margin: 0 10px;
+    }
+
+    header nav .nav-link-pipe::before {
+      content: "|";
+      color: #ccc;
+    }
+
+
+  </style>
+  <header class="clearfix">
+    <a id="logo-link" href="#">
+      <img id="logo" height="75" width="180" src="https://nodejs.org/static/images/logo.svg" alt="logo"/>
+    </a>
+    <nav>
+      <ul id="nav-links">
+        <li class="nav-link"><a href="#">home</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">about</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">downloads</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">docs</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">foundation</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">get involved</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">security</a></li>
+        <li class="nav-link nav-link-pipe"><a href="#">news</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- section: end -->
+  <style type="text/css">
+    section#introduction {
+      margin-top: 50px;
+      padding: 10px 190px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.6em;
+      font-weight: lighter;
+    }
+
+    .upper {
+      position: relative;
+      font-size: 0.5em;
+      top: -1em;
+    }
+
+    .green-link {
+      color: #80bd01;
+    }
+    .green-link:hover {
+      border-radius: 3px;
+      color: #fff;
+      background: #80bd01;
+      padding: 5px 0;
+    }
+
+    section#introduction #important {
+      background: #F1FBDA;
+      max-width: 730px;
+      padding: 10px 0;
+      margin: 30px auto;
+      font-size: 1.3em;
+    }
+
+  </style>
+
+  <!-- section -->
+  <style type="text/css">
+  </style>
+  <section id="introduction">
+    <p class="description">
+      Node.js<span class="upper">®</span> is a JavaScript runtime built on <a class="green-link" href="https://developers.google.com/v8/">Chrome's V8 JavaScript engine</a>. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+    </p>
+    <p class="description">
+      Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+    </p>
+    <div id="important">
+      Important <a href="#" class="green-link">security releases</a>, please update now!
+    </div>
+
+    <style type="text/css">
+      section#introduction #download-container {
+        position: relative;
+        float: left;
+        left: 50%;
+      }
+
+      section#introduction #download-container #downloads {
+        position: relative;
+        left: -50%;
+        list-style: none;
+      }
+
+      section#introduction #download-container .download-item {
+        display: block;
+        float: left;
+        width: 243px;
+        height: 100px;
+        border-radius: 2px;
+        margin: 10px 10px;
+        text-align: center;
+      }
+
+      section#introduction #download-container .download-link {
+        display: inline-block;
+        background: #80BD01;
+        width: 100%;
+        height: 70px;
+        padding-top: 10px;
+        color: #fff;
+      }
+
+      section#introduction #download-container .download-link p {
+        font-size: 1.3em;
+      }
+      section#introduction #download-container .download-meta {
+        font-size: 0.6em;
+        color: grey;
+      }
+
+    </style>
+
+    <div id="download" class="clearfix">
+      <p>Download for OS X (x64)</p>
+      <div id="download-container">
+        <ul id="downloads">
+          <li class="download-item">
+            <a class="download-link" href="#">
+              <p>v4.2.3 LTS</p>
+              <small>Mature and Dependable</small>
+            </a>
+            <div class="download-meta">Other Downloads | Changelog | API Docs</div>
+          </li>
+          <li class="download-item">
+            <a class="download-link" href="#">
+              <p>v5.1.1 Stable</p>
+              <small>Latest Features</small>
+            </a>
+            <div class="download-meta">Other Downloads | Changelog | API Docs</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- section: end -->
+
+  <!-- section -->
+  <style type="text/css">
+    section#conf {
+      background: url("https://nodejs.org/static/images/nodejs-interactive-portland2015.jpg") 50% 0 no-repeat;
+      height: 300px;
+      width: 100%;
+      border-top: 20px solid #fff;
+    }
+    section#conf:hover {
+      border-top: 20px solid #80BD01;
+    }
+    section#conf a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    section#conf img {
+      margin-top: 100px;
+    }
+  </style>
+  <section id="conf">
+    <a href="#"><img height="140" src="https://nodejs.org/static/images/NodeInteractive_Date_white.png" alt="conf logo"></a>
+  </section>
+  <!-- section: end -->
+
+  <!-- section -->
+  <style type="text/css">
+    footer {
+      background: #333;
+      padding: 20px 30px;
+      color: #fff;
+    }
+
+    footer #footer-head {
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      color: #ccc;
+    }
+
+    footer #linux-foundation {
+      float: left;
+    }
+
+    footer #linux-foundation a {
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    footer #help-links {
+      float: right;
+      list-style: none;
+    }
+
+    footer .help-link {
+      float: left;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+
+    footer .help-link-pipe::before {
+      content: "|";
+      color: #ccc;
+      margin-right: 10px;
+    }
+
+    footer p {
+      margin-top: 10px;
+      font-size: 0.8em;
+    }
+
+  </style>
+  <footer>
+    <div id="footer-head" class="clearfix">
+      <div id="linux-foundation"><a href="#">Linux Foundation Collaborative Projects</a></div>
+      <ul id="help-links">
+        <li class="help-link"><a href="#">Report Node.js issue</a></li>
+        <li class="help-link help-link-pipe"><a href="#">Report website issue</a></li>
+        <li class="help-link help-link-pipe"><a href="#">Get Help</a></li>
+      </ul>
+    </div>
+
+    <p>© 2015 Node.js Foundation. All Rights Reserved. Portions of this site originally © 2015 Joyent.</p>
+    <p>Node.js is a trademark of Joyent, Inc. and is used with its permission. Please review the Trademark Guidelines of the Node.js Foundation.</p>
+    <p>Linux Foundation is a registered trademark of The Linux Foundation.</p>
+    <p>Linux is a registered trademark of Linus Torvalds.</p>
+    <p>Node.js Project Licensing Information.</p>
+  </footer>
+  <!-- section: end -->
+</body>
+</html>
