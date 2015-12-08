@@ -215,32 +215,23 @@
       color: #fff;
       overflow: hidden;
     }
-    section#download .container {
-      display: inline-block;
-      position: relative;
-      float: left;
-      left: 50%;
-    }
-    section#download #float-wrapper {
-      position: relative;
-      left: -50%;
-    }
 
-    section#download #float-wrapper .float-item {
+    section#download .container-item {
       float: left;
-      width: 260px;
-      margin-right: 50px;
+      width: 300px;
+      margin: 0 5px;
     }
 
     section#download #inline-logo {
-      height: 200px;
-      color: #fff;
+      display: block;
+      height: 100%;
+      width: 100%;
     }
+
 
     section#download p {
       font-size: 1.7em;
-      margin-left: 20px;
-      margin-right: -100px;
+      margin-left: 10px;
     }
 
     section#download .btn {
@@ -258,24 +249,88 @@
     }
 
   </style>
-  <section id="download" class="clearfix">
-    <div class="container">
-      <div id="float-wrapper">
+  <section id="download">
+    <div class="container clearfix">
 
-        <div class="float-item"><a href="#" id="inline-logo"><img width="300px" height="120px" src="https://mozorg.cdn.mozilla.net/media/img/home/voices/firefox-logo-wordmark-white.de059cc90a4e.png" /></a></div>
-        <div class="float-item">
-          <p>Committed to you, your privacy and an open Web</p>
-        </div>
-        <div class="float-item">
-          <a href="#" class="btn">free download</a>
-        </div>
-
+    <div class="container-item">
+      <a href="#" id="inline-logo"><img width="300px" height="120px" src="https://mozorg.cdn.mozilla.net/media/img/home/voices/firefox-logo-wordmark-white.de059cc90a4e.png" /></a>
+    </div>
+    <div class="container-item">
+        <p>Committed to you, your privacy and an open Web</p>
       </div>
+      <div class="container-item">
+        <a href="#" class="btn">free download</a>
+      </div>
+
 
     </div>
   </section>
   <!-- section: end -->
-  <section></section>
+  <!-- section -->
+  <style type="text/css">
+    section#involved {
+      background: #C0413C;
+      padding: 50px 0;
+      color: #fff;
+    }
+
+    section#involved #involved-list {
+      list-style: none;
+    }
+
+    section#involved .involved-item {
+      float: left;
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      margin: 0 5px;
+    }
+
+    section#involved span {
+      display: block;
+    }
+
+    section#involved .stat {
+      font-size: 3em;
+    }
+
+    section#involved .involved-desc {
+      font-size: 1.5em;
+    }
+
+    section#involved .blue-btn {
+      display: block;
+      width: 360px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: #fff;
+      background: #0095dd;
+      font-size: 1.2em;
+      border-radius: 6px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+  </style>
+  <section id="involved">
+    <ul id="involved-list" class="container clearfix">
+       <li class="involved-item">
+         <span class="stat">10,554</span>
+         <span class="involved-desc"><em>active Mozillians worldwide</em></span>
+       </li>
+       <li class="involved-item">
+         <span class="stat">42</span>
+         <span class="involved-desc"><em>upcoming events around the globe</em></span>
+       </li>
+       <li class="involved-item">
+         <span class="stat">87</span>
+         <span class="involved-desc"><em>languages and counting, on every continent</em></span>
+       </li>
+     </ul>
+     <a class="blue-btn" href="#">Get Involved with Mozilla today</a>
+  </section>
+  <!-- section: end -->
   <section></section>
   <section></section>
   <section></section>
