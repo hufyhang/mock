@@ -17,6 +17,10 @@
       font-family: "Helvetica Neue", sans-serif;
       font-weight: lighter;
     }
+    body {
+      min-width: 1060px;
+      margin: 0;
+    }
     a {text-decoration: none;}
     a:link {text-decoration: none;}
     a:visited {text-decoration: none;}
@@ -24,6 +28,7 @@
     a:active {text-decoration: none;}
 
     .container {
+      text-align: center;
       width: 900px;
       margin: 0 auto;
     }
@@ -92,7 +97,7 @@
       background-position: 50% 0;
       background-size: auto, auto 100%;
       background-repeat: no-repeat, repeat;
-      height: 590px;
+      height: 530px;
       padding-top: 50px;
     }
 
@@ -170,7 +175,7 @@
       font-weight: normal;
     }
   </style>
-  <div id="main">
+  <div id="main" class="clearfix">
     <div id="main-upper">
       <div class="container">
         <div class="columns clearfix">
@@ -236,6 +241,10 @@
 
         <style>
           .screenshot-wrapper {
+            overflow: hidden;
+          }
+          #screenshot {
+            display: block;
             background: url("https://atom.io/assets/screenshot-main-f609d95c29e5190787970f8c83762fcb.png") no-repeat;
             width: 860px;
             height: 390px;
@@ -244,7 +253,9 @@
             box-shadow: 0 2px 5px black;
           }
         </style>
-        <div class="screenshot-wrapper"></div>
+        <div class="screenshot-wrapper">
+          <span id="screenshot"></span>
+        </div>
         <style>
           #welcome {
             text-align: justify;
@@ -257,7 +268,171 @@
         </div>
       </div>
     </div>
-    <div id="main-lower"></div>
+  </div>
+  <!-- section: end -->
+
+  <!-- section -->
+  <style>
+    #highlight {
+      position: relative;
+      overflow: hidden;
+      margin-top: 400px;
+      background: #faf6ec;
+      padding: 30px 0;
+    }
+    #highlight-title {
+      padding: 30px;
+      font-size: 2em;
+    }
+
+    #features {
+      list-style: none;
+    }
+
+    .feature {
+      width: 33%;
+      float: left;
+      margin: 20px 0;
+    }
+
+    .feature-title {
+      font-size: 1.5em;
+    }
+
+    .feature-desc {
+      text-align: center;
+    }
+    .feature:nth-child(3n+1) {
+      clear: left;
+    }
+  </style>
+  <div id="highlight">
+    <div class="container">
+
+      <h2 id="highlight-title">Full-featured, right out of the box</h2>
+
+      <ul id="features" class="clearfix">
+        <li class="feature">
+          <h3 class="feature-title">Cross-platform editing</h3>
+          <p class="feature-desc">Atom works across operating systems. You can use it on OS X, Windows, or Linux.</p>
+        </li>
+        <li class="feature">
+          <h3 class="feature-title">Built-in package manager</h3>
+          <p class="feature-desc">Search for and install new packages or start creating your own—all from within Atom.</p>
+        </li>
+        <li class="feature">
+          <h3 class="feature-title">Smart autocompletion</h3>
+          <p class="feature-desc">Atom helps you write code faster with a smart, flexible autocomplete.</p>
+        </li>
+        <li class="feature">
+          <h3 class="feature-title">File system browser</h3>
+          <p class="feature-desc">Easily browse and open a single file, a whole project, or multiple projects in one window.</p>
+        </li>
+        <li class="feature">
+          <h3 class="feature-title">Multiple panes</h3>
+          <p class="feature-desc">Split your Atom interface into multiple panes to compare and edit code across files.</p>
+        </li>
+        <li class="feature">
+          <h3 class="feature-title">Find and replace</h3>
+          <p class="feature-desc">Find, preview, and replace text as you type in a file or across all your projects.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- section: end -->
+
+  <!-- section -->
+  <style>
+    #details-section {
+      padding: 50px 0;
+    }
+
+    #details {
+      list-style: none;
+    }
+
+    .detail {
+      display: block;
+    }
+
+    .tile {
+      font-size: 1.3em;
+      float: left;
+      width: 350px;
+      padding: 0 30px;
+      text-align: left;
+    }
+
+    .tile h3 {
+      margin-top: 100px;
+    }
+
+    .tile p {
+      margin-top: 20px;
+      font-size: 0.9em;
+      text-align: justify;
+    }
+
+    .tile-image {
+      display: block;
+      width: 410px;
+      height: 470px;
+    }
+
+    #tile-image-1 {
+      background: url("https://atom.io/assets/packages-d16d6cc46fd0cf01842409577e782b74.gif") no-repeat;
+    }
+
+    #tile-image-2 {
+      background-image: url("https://atom.io/assets/demo-1b2df635eb150270e8c00c1f789d03cd.gif"), url("https://atom.io/assets/monitor-8ce6deceed6afe26d8c8f05d7628045c.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 63px 33px, 0 0;
+    }
+
+  </style>
+  <div id="details-section">
+    <div class="container">
+
+      <ul id="details container">
+        <li class="detail clearfix">
+          <div class="tile">
+            <h3>Packages</h3>
+            <p>You choose from thousands of open source packages that add new features and functionality to Atom—or build a package from scratch and publish it for everyone else to use.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-image" id="tile-image-1"></span>
+          </div>
+        </li>
+        <li class="detail clearfix">
+          <div class="tile">
+            <span class="tile-image" id="tile-image-2"></span>
+          </div>
+          <div class="tile">
+            <h3>Themes</h3>
+            <p>Atom comes pre-installed with four UI and eight syntax themes in both dark and light colors. If you can't find what you're looking for, you can also install themes created by the Atom community or create your own.</p>
+          </div>
+        </li>
+        <li class="detail clearfix">
+          <div class="tile">
+            <h3>Packages</h3>
+            <p>You choose from thousands of open source packages that add new features and functionality to Atom—or build a package from scratch and publish it for everyone else to use.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-image" id="tile-image-1"></span>
+          </div>
+        </li>
+        <li class="detail clearfix">
+          <div class="tile">
+            <span class="tile-image" id="tile-image-2"></span>
+          </div>
+          <div class="tile">
+            <h3>Themes</h3>
+            <p>Atom comes pre-installed with four UI and eight syntax themes in both dark and light colors. If you can't find what you're looking for, you can also install themes created by the Atom community or create your own.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
   <!-- section: end -->
 </body>
