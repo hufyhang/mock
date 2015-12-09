@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Original: atom.io -->
+  <title>Mockup: Atom</title>
+  <style>
+    @font-face {
+      font-family: "octicons";
+      font-style: normal;
+      font-weight: normal;
+      src: url("/octicons-bcbb1ed39a9e724ce23ea05a3332fe4b.woff") format("woff");
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: lighter;
+    }
+    a {text-decoration: none;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <style>
+    #header {
+      background: #584B4F;
+      padding: 10px;
+      line-height: 25px;
+      height: 25px;
+    }
+
+    #header a {
+      color: #efeae1;
+    }
+
+    #header ul {
+      list-style: none;
+    }
+
+    #nav-left {
+      float: left;
+    }
+
+    #nav-right {
+      float: right;
+    }
+
+    .nav-link {
+      float: left;
+      margin: 0 5px;
+      text-transform: capitalize;
+    }
+
+    #signin-link::before {
+      font-family: "octicons";
+      content: "\f036";
+      margin-right: 10px;
+    }
+
+  </style>
+  <div id="header">
+    <div class="container">
+      <ul id="nav-left">
+        <li class="nav-link"><a href="#">packages</a></li>
+        <li class="nav-link"><a href="#">themes</a></li>
+        <li class="nav-link"><a href="#">documentation</a></li>
+        <li class="nav-link"><a href="#">blog</a></li>
+        <li class="nav-link"><a href="#">discuss</a></li>
+      </ul>
+      <ul id="nav-right">
+       <li class="nav-link"><a id="signin-link" href="#">Sign in</a></li>
+     </ul>
+    </div>
+  </div>
+  <!-- header: end -->
+
+  <!-- section -->
+  <style>
+    #main-upper {
+      position: relative;
+      background-image: url("https://atom.io/assets/hero-512443e2bb7c29a503e21e06c7197150.svg"), url("https://atom.io/assets/hero-tile-304366d9fe53ac6d41976d5eba7ba2ed.png");
+      background-position: 50% 0;
+      background-size: auto, auto 100%;
+      background-repeat: no-repeat, repeat;
+      height: 590px;
+      padding-top: 50px;
+    }
+
+    .columns {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+    .clearfix::after {
+      clear: both;
+      display: block;
+      content: "";
+      height: 0;
+      visibility: hidden;
+    }
+
+    .column-left {
+      float: left;
+      width: 50%;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    #title {
+      display: inline-block;
+      *display: inline;
+      background-image: url("https://atom.io/assets/logo-16711bee3666d535359eb00daddd6075.png");
+      height: 60px;
+      width: 290px;
+      text-indent: 120%;
+      overflow: hidden;
+    }
+
+    .subtitle {
+      display: block;
+      font-size: 0.8em;
+    }
+    #main h2 {
+      font-size: 2.2em;
+      color: #849189;
+    }
+
+    .btn {
+      display: block;
+      width: 190px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      background: #c43627;
+      margin: 0 auto;
+      border-radius: 5px;
+      font-size: 1.2em;
+      box-shadow: 2px 2px 1px grey;
+    }
+
+    #main .btn {
+      margin-top: 50px;
+    }
+
+    #version-support {
+      display: block;
+      margin-top: 15px;
+      font-weight: normal;
+      color: #849189;
+      font-size: 0.9em;
+    }
+
+    #version-support a {
+      color: #66595C;
+      font-weight: normal;
+    }
+  </style>
+  <div id="main">
+    <div id="main-upper">
+      <div class="container">
+        <div class="columns clearfix">
+          <div class="column-left">
+            <h1><a id="title" href="#">atom</a></h1>
+            <h2>A hackable text editor
+              <span class="subtitle">for the 21st Century</span>
+            </h2>
+            <a class="btn" href="#">Download for Mac</a>
+            <span id="version-support">
+              For OSX 10.8 or later.
+              <a href="#">Other platforms</a>
+               -
+               <a href="#">Beta releases</a>
+            </span>
+          </div>
+
+          <style>
+            .video {
+              position: relative;
+              background-image: url("https://atom.io/assets/video-bg-01c24454c6fe38474c6b729bc1d0814c.svg");
+              width: 300px;
+              height: 300px;
+              margin: 0 auto;
+            }
+            .video a {
+              position: relative;
+              display: inline-block;
+              *display: inline;
+              width: 200px;
+              height: 200px;
+              text-indent: 120%;
+              overflow: hidden;
+              margin-top: 50px;
+              border-radius: 100%;
+              background-image: url("https://atom.io/assets/video-thumb-dea32849583d96eefd14e4191383693c.jpg");
+              background-size: 200px 200px;
+            }
+
+            .video a::before {
+              position: absolute;
+              display: block;
+              background-image: url("https://atom.io/assets/video-button-be9bf212078363cb4f5b29d62dd2fe68.svg");
+              background-repeat: no-repeat;
+              background-color: transparent;
+              background-position: 50%;
+              height: 100%;
+              width: 100%;
+              content: "";
+              top: 0;
+              left: 0;
+            }
+            .video a:hover::before {
+              background-color: rgba(0, 0, 0, 0.2);
+            }
+          </style>
+          <div class="column-left">
+            <div class="video">
+              <a href="#">demo</a>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .screenshot-wrapper {
+            background: url("https://atom.io/assets/screenshot-main-f609d95c29e5190787970f8c83762fcb.png") no-repeat;
+            width: 860px;
+            height: 390px;
+            margin: 10px auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px black;
+          }
+        </style>
+        <div class="screenshot-wrapper"></div>
+        <style>
+          #welcome {
+            text-align: justify;
+            padding: 20px 30px;
+            font-size: 2em;
+          }
+        </style>
+        <div id="welcome">
+          Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
+        </div>
+      </div>
+    </div>
+    <div id="main-lower"></div>
+  </div>
+  <!-- section: end -->
+</body>
+</html>
