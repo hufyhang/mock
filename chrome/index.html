@@ -23,7 +23,7 @@
     }
 
     .container {
-      width: 900px;
+      width: 1000px;
       margin: 0 auto;
       text-align: center;
     }
@@ -131,11 +131,11 @@
       background: linear-gradient(top,#008dfd 0,#0370ea 100%);
     }
 
-    #download-version {
+    .download-version {
       display: block;
     }
 
-    #download-other {
+    .download-other {
       display: block;
       font-weight: initial;
       margin: 20px 0 50px 0;
@@ -204,9 +204,159 @@
     <img class="screenshot" src="https://www.google.com/chrome/assets/common/images/marquee/benefits-1.jpg" alt="zagat">
 
 
+    <h3 class="small-title">Make Chrome yours</h3>
+    <p class="description">Browse just the way you'd like with Chrome themes, apps and extentions. Get straight to your favorite web destinations with bookmarks and start pages. Once you've set up Chrome, your customizations will be kept in sync across all of your devices. Start customizing</p>
+    <img class="screenshot" src="https://www.google.com/chrome/assets/common/images/marquee/benefits-4.jpg" alt="customize">
+
+    <style>
+      #download {
+        margin: 20px 0 50px 0;
+        min-width: 1000px;
+      }
+      .left, .right {
+        float: left;
+        width: 500px;
+        height: 300px;
+      }
+      .left {
+        background: url("https://www.google.com/chrome/assets/common/images/marquee/benefits-5-mobile.png") no-repeat;
+        background-size: 448px 289px;
+        background-position: 50%;
+      }
+      .right {
+        text-align: left;
+      }
+      .left-btn {
+        margin: 20px 0;
+      }
+    </style>
+    <div id="download" class="clearfix">
+      <div class="left"></div>
+      <div class="right">
+        <h2 class="title">Get Chrome for Mac</h2>
+        <h4 class="subtitle">One browser for your computer, phone and tablet
+        </h3>
+        <a href="#" class="btn left-btn">Download Chrome</a>
+        <span class="download-version">For Mac OS X 10.6 or later</span>
+        <a href="#" class="download-other">Download Chrome for another platform</a>
+      </div>
+    </div>
 
   </div>
   <!-- section: end -->
+
+  <!-- footer -->
+  <style>
+    #footer {
+      margin-top: 100px;
+      padding: 30px;
+      background: #f3f3f3;
+    }
+
+    .footer-list {
+      float: left;
+      width: 200px;
+      list-style: none;
+      text-align: left;
+    }
+
+    .footer-list-item {
+      text-transform: capitalize;
+      font-size: 0.8em;
+    }
+
+    .footer-list-title {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      margin: 10px 0;
+    }
+
+    .footer-list-title a {
+      font-weight: initial;
+    }
+  </style>
+  <div id="footer">
+    <div class="container clearfix">
+
+      <ul class="footer-list">
+        <li class="footer-list-item footer-list-title"><a href="#">products</a></li>
+        <li class="footer-list-item"><a href="#">browser</a></li>
+        <li class="footer-list-item"><a href="#">devices</a></li>
+        <li class="footer-list-item"><a href="#">Web store</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-item footer-list-title"><a href="#">business</a></li>
+        <li class="footer-list-item"><a href="#">Browser</a></li>
+        <li class="footer-list-item"><a href="#">Devices</a></li>
+        <li class="footer-list-item"><a href="#">Web store</a></li>
+        <li class="footer-list-item"><a href="#">Google for Work</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-item footer-list-title"><a href="#">education</a></li>
+        <li class="footer-list-item"><a href="#">browser</a></li>
+        <li class="footer-list-item"><a href="#">devices</a></li>
+        <li class="footer-list-item"><a href="#">web store</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-item footer-list-title">
+          <a href="#">dev and partners</a>
+        </li>
+        <li class="footer-list-item"><a href="#">chromium</a></li>
+        <li class="footer-list-item"><a href="#">chrome OS</a></li>
+        <li class="footer-list-item"><a href="#">Chrome web store</a></li>
+        <li class="footer-list-item"><a href="#">Chrome Experiments</a></li>
+        <li class="footer-list-item"><a href="#">google code</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list-item footer-list-title">
+          <a href="#">latest news</a>
+        </li>
+        <li class="footer-list-item"><a href="#">chrome blog</a></li>
+        <li class="footer-list-item"><a href="#">YouTube Channel</a></li>
+        <li class="footer-list-item"><a href="#">Google+ page</a></li>
+      </ul>
+
+    </div>
+
+    <div class="container clearfix">
+
+      <style>
+        #footer-copyright {
+          margin-top: 30px;
+          border: none;
+          border-top: 1px solid #cacaca;
+        }
+
+        #copyright-links {
+          list-style: none;
+        }
+
+        .copyright-link {
+          float: left;
+          text-align: left;
+          margin: 5px;
+          font-size: 0.8em;
+        }
+
+        .prefix-dot::before {
+          content: "\00B7";
+          margin-right: 10px;
+        }
+
+      </style>
+
+      <div id="footer-copyright">
+        <ul id="copyright-links" class="clearfix">
+          <li class="copyright-link"><a href="#">Google</a></li>
+          <li class="copyright-link prefix-dot"><a href="#">About Google</a></li>
+          <li class="copyright-link prefix-dot"><a href="#">Chrome Privacy</a></li>
+          <li class="copyright-link prefix-dot"><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- footer: end -->
 
 </body>
 </html>
