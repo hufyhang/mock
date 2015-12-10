@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Original: https://www.google.com/chrome/browser/desktop/index.html -->
+  <title>Mockup: Chrome Browser</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: lighter;
+    }
+
+    a {text-decoration: none; color: #000;}
+    a:link {text-decoration: none;}
+    a:visited {text-decoration: none;}
+    a:hover {text-decoration: none;}
+    a:active {text-decoration: none;}
+
+    body {
+      min-width: 600px;
+    }
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <style>
+    #header {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      height: 64px;
+    }
+    #header span {
+      display: inline-block;
+      *display: inline;
+    }
+
+    #logo {
+      float: left;
+    }
+
+    #logo-link {
+      display: block;
+      background: url("https://www.google.com/chrome/assets/common/images/chrome_logo_2x.png?mmfb=a5234ae3c4265f687c7fffae2760a907") no-repeat;
+      background-size: 123px 40px;
+      text-indent: 120%;
+      overflow: hidden;
+      width: 123px;
+      height: 40px;
+    }
+
+    #nav {
+      margin-top: 8px;
+      float: right;
+    }
+
+    #nav-links {
+      list-style: none;
+    }
+
+    .nav-link {
+      float: left;
+      text-transform: uppercase;
+      margin: 0 30px;
+      font-size: 0.8em;
+    }
+
+    .nav-link a {
+      font-weight: initial;
+    }
+  </style>
+  <div id="header" class="container">
+    <span id="logo"><a id="logo-link" href="#">Chrome</a></span>
+    <span id="nav">
+      <ul id="nav-links">
+        <li class="nav-link"><a href="#">Download</a></li>
+        <li class="nav-link"><a href="#">Set up</a></li>
+        <li class="nav-link"><a href="#">chromebook</a></li>
+        <li class="nav-link"><a href="#">chromecast</a></li>
+      </ul>
+    </span>
+  </div>
+  <!-- header: end -->
+
+  <!-- section -->
+  <style>
+    .title {
+      font-size: 2.9em;
+    }
+
+    .subtitle {
+      font-size: 1.3em;
+      color: grey;
+    }
+
+    .btn {
+      font-weight: initial;
+      display: block;
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 3px;
+      text-align: center;
+      margin: 20px auto;
+      color: #fff;
+      background: #0370ea;
+      background: -moz-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#008dfd),color-stop(100%,#0370ea));
+      background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      background: -o-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      background: -ms-linear-gradient(top,#008dfd 0,#0370ea 100%);
+      background: linear-gradient(top,#008dfd 0,#0370ea 100%);
+    }
+
+    #download-version {
+      display: block;
+    }
+
+    #download-other {
+      display: block;
+      font-weight: initial;
+      margin: 20px 0 50px 0;
+      font-size: 0.8em;
+    }
+
+    .screenshot {
+      margin: 30px 0;
+    }
+
+    .small-title {
+      margin-top: 60px;
+      font-size: 2em;
+    }
+  </style>
+  <div class="container">
+    <h2 class="title">Get a fast, free web browser</h2>
+    <h4 class="subtitle">One browser for your computer, phone and tablet
+</h3>
+    <a href="#" class="btn">Download Chrome</a>
+    <span id="download-version">For Mac OS X 10.6 or later</span>
+    <a href="#" id="download-other">Download Chrome for another platform</a>
+    <img class="screenshot" src="https://www.google.com/chrome/assets/common/images/marquee/chrome-new.jpg" width="899" height="420" alt="chrome devices">
+
+    <h3 class="small-title">Browser faster</h3>
+    <img class="screenshot" src="https://www.google.com/chrome/assets/common/images/marquee/benefits-2.jpg" alt="omnibar" width="706" height="247">
+
+    <style>
+      #features {
+        list-style: none;
+      }
+
+      .feature {
+        float: left;
+        text-align: center;
+        width: 50%;
+      }
+
+      .feature p {
+        padding: 20px 40px;
+      }
+
+      .tiny-title {
+        font-size: 1.3em;
+      }
+
+    </style>
+    <ul id="features" class="clearfix container">
+      <li class="feature">
+        <h3 class="tiny-title">Search instantly</h3>
+        <p class="description">Search and navigate from the same box. Choose from results and suggestions that appear as you type, including your recent searches and visited websites, so you can get to what you want in a snap. Search from the omnibox</p>
+      </li>
+      <li class="feature">
+        <h3 class="tiny-title">Type less</h3>
+        <p class="description">Tired of filling out web forms with the same information time and time again? Autofill lets you complete forms with just one click. And it works across devices too — so you can skip all that small-screen typing. Start using Autofill</p>
+      </li>
+    </ul>
+
+    <style>
+      .description {
+        margin: 20px 50px;
+      }
+    </style>
+    <h3 class="small-title">Pick up where you left off</h3>
+    <p class="description"> Chrome brings your open tabs, bookmarks and recent searches from your computer to your phone or tablet, and vice versa. That way you have your web on all of your devices. Just sign in on your other devices to start syncing. Learn more</p>
+    <img class="screenshot" src="https://www.google.com/chrome/assets/common/images/marquee/benefits-1.jpg" alt="zagat">
+
+
+
+  </div>
+  <!-- section: end -->
+
+</body>
+</html>
