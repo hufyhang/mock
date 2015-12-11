@@ -15,7 +15,7 @@
     }
 
     body {
-      min-width: 600px;
+      min-width: 700px;
     }
 
     .container {
@@ -254,6 +254,11 @@
       position: relative;
       float: left;
       width: 50%;
+
+      transition: all 1s linear;
+
+      background-size: 700px;
+      background-repeat: no-repeat;
     }
 
     .tile-link-overlay {
@@ -280,17 +285,24 @@
       color: #000;
     }
 
+    .tile-item:hover {
+      background-size: 500px 400px;
+    }
+
+    #tile-diy, #tile-social, #tile-yoga, #tile-technology {
+    }
+
     #tile-diy {
-      background: url("//cdn.flipboard.com/dev_O/topics/diy-184313204/large.jpg") no-repeat;
+      background-image: url("//cdn.flipboard.com/dev_O/topics/diy-184313204/large.jpg");
     }
     #tile-social {
-      background: url("https://cdn.flipboard.com/dev_O/topics/socialmedia-150415588/large.jpg") no-repeat;
+      background-image: url("https://cdn.flipboard.com/dev_O/topics/socialmedia-150415588/large.jpg");
     }
     #tile-yoga {
-      background: url("//cdn.flipboard.com/dev_O/topics/yoga-89001798/large.jpg") no-repeat;
+      background-image: url("//cdn.flipboard.com/dev_O/topics/yoga-89001798/large.jpg");
     }
     #tile-technology {
-      background: url("//cdn.flipboard.com/dev_O/topics/technology-130112784/large.jpg") no-repeat;
+      background-image: url("//cdn.flipboard.com/dev_O/topics/technology-130112784/large.jpg");
     }
   </style>
       <div class="tile">
@@ -324,5 +336,38 @@
     </div>
   </div>
   <!-- section: end -->
+
+  <!-- footer -->
+  <style>
+    #footer {
+      position: relative;
+      background-image: url("//cdn.flipboard.com/web/space_travel.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 600px;
+    }
+
+    #footer-container {
+      position: relative;
+      width: 600px;
+      text-align: center;
+      top: 150px;
+      margin: 0 auto;
+    }
+
+  </style>
+  <div id="footer">
+    <div id="footer-container">
+      <h1 class="title">Join Flipboard</h1>
+      <a class="facebook-btn" href="#">Sign up with Facebook</a>
+        <span id="or">or via email</span>
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Password">
+        <button class="push-btn">Sign Up</button>
+
+    </div>
+  </div>
+  <!-- footer: end -->
 </body>
 </html>
