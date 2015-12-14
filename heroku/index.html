@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>mockup: heroku blog</title>
+  <!-- original: http://blog.heroku.com/archives/2011/4/1/announcing_heroku_for_logo -->
+  <!--[if lt IE9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <style>
+   * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+   }
+
+   body {
+    min-width: 1000px;
+   }
+
+   .container {
+    width: 1000px;
+    margin: 0 auto;
+   }
+
+   .clearfix {
+    zoom: 1;
+   }
+
+   .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+   }
+
+   a {text-decoration: none; color: #000;}
+   a:link {text-decoration: none; color: #000;}
+   a:visited {text-decoration: none; color: #000;}
+   a:hover {text-decoration: none; color: #000;}
+   a:active {text-decoration: none; color: #000;}
+
+   .left {
+    float: left;
+   }
+
+   .right {
+    float: right;
+   }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <style>
+    header {
+      height: 80px;
+      line-height: 80px;
+      background-color: #3b2f63;
+      background-image: -webkit-radial-gradient(50% top, circle, rgba(84,90,182,0.6) 0%, rgba(84,90,182,0) 75%),-webkit-radial-gradient(right top, circle, #794aa2 0%, rgba(121,74,162,0) 57%);
+      background-image: radial-gradient(circle at 50% top, rgba(84,90,182,0.6) 0%,rgba(84,90,182,0) 75%),radial-gradient(circle at right top, #794aa2 0%,rgba(121,74,162,0) 57%);
+      background-repeat: no-repeat;
+      background-size: 100% 1000px;
+      color: #c7c0de;
+      padding: 0 20px;
+    }
+
+    #logo {
+      display: inline-block;
+      *display: inline;
+      margin-top: 20px;
+      height: 40px;
+      width: 143px;
+      overflow: hidden;
+      text-indent: 120%;
+      background-image: url("http://blog.heroku.com/assets/logo-8464536b62ea046726f5b7ed9aecc2fc.svg");
+      background-repeat: no-repeat;
+    }
+
+    #nav-links {
+      list-style: none;
+      margin: 0 20px;
+    }
+
+    #nav-links a {
+      color: #c7c0de;
+    }
+
+    .nav-link {
+      text-transform: capitalize;
+      float: left;
+      margin: 0 10px;
+      font-size: 1em;
+    }
+
+    #user-links * {
+      margin: 0 5px;
+      color: #c7c0de;
+    }
+
+    #signup {
+      display: block;
+      *display: inline;
+      height: 35px;
+      color: #fff;
+      margin: 23px 5px;
+      padding: 0 10px;
+      line-height: 35px;
+      border-radius: 5px;
+      background: rgba(0,0,0,0.2);
+    }
+
+    #signup:hover {
+      background: rgba(0,0,0,0.5);
+    }
+  </style>
+  <header>
+    <nav class="clearfix">
+      <a href="#" id="logo" class="left">heroku</a>
+      <ul id="nav-links" class="left clearfix">
+        <li class="nav-link"><a href="#">products</a></li>
+        <li class="nav-link"><a href="#">elements</a></li>
+        <li class="nav-link"><a href="#">pricing</a></li>
+        <li class="nav-link"><a href="#">documentation</a></li>
+        <li class="nav-link"><a href="#">support</a></li>
+        <li class="nav-link"><a href="#">more</a></li>
+      </ul>
+
+      <span id="user-links" class="right">
+        <a href="#" class="left">log in</a>
+        <span class="left"> or </span>
+        <a href="#" class="left" id="signup">sign up</a>
+      </span>
+
+    </nav>
+  </header>
+  <!-- header: end
+
+  <!-- section -->
+  <style>
+  #article-section {
+    margin: 100px 0;
+  }
+  #title-info {
+    width: 40%;
+    position: sticky;
+    top: 100px;
+  }
+
+  #title {
+    color: #6e5baa;
+    font-size: 1.6em;
+    margin: 15px 0;
+  }
+
+  #subtitle {
+    color: #999999;
+  }
+
+  #article {
+    width: 60%;
+    margin-top: 30px;
+    text-align: justify;
+  }
+
+  #article p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  </style>
+  <section id="article-section">
+    <div class="container clearfix">
+      <div id="title-info" class="left">
+        <h2 id="title">announcing heroku for logo... powered by heroku</h2>
+        <h3 id="subtitle">posted over 4 years ago by james</h3>
+      </div>
+      <article id="article" class="left">
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi, nostrum obcaecati asperiores, placeat nemo totam autem laboriosam consequuntur quo sunt quod, aut debitis fugit nesciunt amet. eveniet, molestias rem reiciendis.</p>
+      </article>
+
+      <style>
+        #archives {
+          width: 300px;
+          margin: 0 auto;
+          position: relative;
+          top: 80px;
+          text-align: center;
+        }
+
+        #archives-meta {
+          display: block;
+          color: #999999;
+          font-size: 1.2em;
+        }
+
+        #archives-link {
+          display: block;
+          height: 50px;
+          line-height: 50px;
+          width: 220px;
+          text-align: center;
+          background: #8666aa;
+          color: #fff;
+          border-radius: 5px;
+          margin: 10px auto;
+        }
+
+      </style>
+      <div id="archives">
+        <span id="archives-meta">blah blah blah blah blah blah.</span>
+        <a id="archives-link" href="#">visit the engineering blog</a>
+      </div>
+    </div>
+  </section>
+  <!-- section: end -->
+
+  <!-- footer -->
+  <style>
+    footer {
+      background: #f0f0f0;
+      color: #999;
+      padding: 300px 0;
+    }
+  </style>
+  <footer>
+
+  </footer>
+  <!-- footer: end -->
+</body>
+</html>
