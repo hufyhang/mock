@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Original: http://www.yahoo.com -->
+  <title>Mockup: Yahoo!</title>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Helvetica Neue",Helvetica,Arial;
+      color: #5F5F5F;
+    }
+
+    body {
+      min-width: 1060px;
+      background: #FAFAFC;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+
+    .clearfix::after {
+      clear: both;
+      content: "";
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .container {
+      width: 1060px;
+      margin: 0 auto;
+    }
+
+    a {text-decoration: none; color: #1E2683;}
+    a:link {text-decoration: none; color: #1E2683;}
+    a:visited {text-decoration: none; color: #1E2683;}
+    a:hover {text-decoration: none; color: #1E2683;}
+    a:active {text-decoration: none; color: #1E2683;}
+
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <style>
+    header {
+      position: fixed;
+      background: #FAFAFC;
+      top: 0;
+      width: 100%;
+      min-width: 970px;
+      height: 100px;
+      z-index: 1;
+      border-bottom: 1px solid #500095;
+      box-shadow: 0 1px 5px #500095;
+    }
+
+    #top-links {
+      height: 22px;
+      background: #2D1152;
+      color: #FFF;
+      list-style: none;
+    }
+
+    .top-link {
+      float: left;
+      margin: 0 10px;
+    }
+
+    .top-link a {
+      color: #FFF;
+      font-size: 0.8em;
+    }
+
+    .top-link a:hover {
+      text-decoration: underline;
+    }
+
+    .img-sprite {
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+
+    #home-icon {
+      display: inline-block;
+      *display: inline;
+      background-image: url("https://s.yimg.com/dh/ap/default/150720/pc_icons_btns_sprite_0720_330pm.png");
+      background-position: -824px -31px;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-top: -3px;
+    }
+
+    #home-icon:hover {
+      background-position: -841px -31px;
+    }
+
+  </style>
+  <header>
+    <nav>
+      <ul id="top-links" class="clearfix">
+        <li class="top-link">
+          <a href="#">
+            <span id="home-icon" class="img-icon"></span>
+            Home
+          </a>
+        </li>
+        <li class="top-link"><a href="#">Mail</a></li>
+        <li class="top-link"><a href="#">Answers</a></li>
+        <li class="top-link"><a href="#">Groups</a></li>
+        <li class="top-link"><a href="#">Flickr</a></li>
+        <li class="top-link"><a href="#">Tumblr</a></li>
+        <li class="top-link"><a href="#">Games</a></li>
+        <li class="top-link"><a href="#">Live</a></li>
+        <li class="top-link"><a href="#">Screen</a></li>
+        <li class="top-link"><a href="#">Mobile</a></li>
+      </ul>
+    </nav>
+    <style>
+      #top-bar {
+        margin: 20px auto;
+        padding: 0 10px;
+      }
+
+      #logo-anchor {
+        display: inline-block;
+        *display: inline;
+      }
+
+      #logo {
+        background-image: url("https://s.yimg.com/rz/l/yahoo_en-US_f_p_142x37.png");
+        height: 37px;
+        width: 142px;
+        text-indent: 120%;
+        overflow: hidden;
+      }
+
+      #search-field {
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        margin-left: 30px;
+      }
+
+      #search-input {
+        position: absolute;
+        top: 0;
+        line-height: 33px;
+        width: 400px;
+        height: 33px;
+        border: 1px solid #3372e0;
+        border-radius: 3px;
+        font-size: 1.1em;
+        font-weight: lighter;
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: none;
+      }
+
+      #search-input:focus {
+        outline: none;
+      }
+
+      #search-btn {
+        position: absolute;
+        top: 0;
+        left: 425px;
+        cursor: pointer;
+        color: #FFF;
+        height: 33px;
+        background: #3372E0;
+        border: none;
+        font-size: 1em;
+        width: 120px;
+        border-radius: 3px;
+        box-shadow: 0 2px #21487f;
+      }
+
+      #login-field {
+        position: relative;
+        display: block;
+        font-size: 0.9em;
+        height: 33px;
+        font-size: 0.8em;
+      }
+
+      #login-field > span {
+        margin:  0 5px;
+      }
+
+      #login-field img {
+        margin-right: 5px;
+      }
+
+      #user-mail-sprite {
+        positoin: relative;
+        display: inline-block;
+        *display: inline;
+        width: 31px;
+        height: 24px;
+        background-image: url("https://s.yimg.com/dh/ap/default/150720/pc_icons_btns_sprite_0720_330pm.png");
+        background-position: -454px -1px;
+      }
+
+    </style>
+    <div id="top-bar" class="container clearfix">
+      <a id="logo-anchor" class="left" href="#">
+        <h1 id="logo">Yahoo!</h1>
+      </a>
+      <span id="search-field" class="left">
+        <input type="text" id="search-input">
+        <button id="search-btn">Search Web</button>
+      </span>
+
+      <span id="login-field" class="right">
+        <span id="my-yahoo"><a href="#">My Yahoo</a></span>
+        <span id="user-account"><img src="https://www.yahoo.com/sy/dh/ap/social/profile/profile_b48.png" width="26" height="26"><a href="#">Hi, User</a></span>
+        <span id="user-mail" class="img-sprite">
+          <span id="user-mail-sprite"></span>
+          <a href="#">Mail</a>
+        </span>
+      </span>
+    </div>
+  </header>
+  <!-- header: end -->
+
+  <!-- section -->
+  <style>
+    #main-section {
+      position: relative;
+      padding-top: 100px !important;
+    }
+
+    #left-container {
+      width: 130px;
+    }
+
+    #middle-container {
+      width: 570px;
+    }
+
+    #right-container {
+      width: 340px;
+      padding-left: 20px;
+    }
+
+    #aside-nav > ul {
+      list-style: none;
+    }
+
+    #aside-nav > ul > li {
+      margin: 10px 0;
+    }
+
+    #aside-nav > ul > li > a {
+      font-weight: 300;
+    }
+
+    .aside-sprite {
+      display: inline-block;
+      *display: inline;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      background-image: url("https://s.yimg.com/dh/ap/default/150720/pc_icons_btns_sprite_0720_330pm.png");
+    }
+
+    #mail-nav {background-position: -43px -66px;}
+    #news-nav {background-position: -64px -66px;}
+    #sports-nav {background-position: -106px -67px;}
+    #finance-nav {background-position: -85px -66px;}
+    #weather-nav {background-position: -400px -67px;}
+    #autos-nav {background-position: -190px -66px;}
+    #fantasy-nav {background-position: -295px -46px;}
+    #screen-nav {background-position: -1px -67px;}
+    #dating-nav {background-position: -169px -66px;}
+    #shopping-nav {background-position: -211px -67px;}
+
+  </style>
+  <section id="main-section" class="container clearfix">
+    <aside id="left-container" class="left">
+      <nav id="aside-nav">
+        <ul>
+          <li><span class="img-sprite aside-sprite" id="mail-nav"></span><a href="#">Mail</a></li>
+          <li><span class="img-sprite aside-sprite" id="news-nav"></span><a href="#">News</a></li>
+          <li><span class="img-sprite aside-sprite" id="sports-nav"></span><a href="#">Sports</a></li>
+          <li><span class="img-sprite aside-sprite" id="finance-nav"></span><a href="#">Finance</a></li>
+          <li><span class="img-sprite aside-sprite" id="weather-nav"></span><a href="#">Weather</a></li>
+          <li><span class="img-sprite aside-sprite" id="autos-nav"></span><a href="#">Autos</a></li>
+          <li><span class="img-sprite aside-sprite" id="fantasy-nav"></span><a href="#">Fantasy</a></li>
+          <li><span class="img-sprite aside-sprite" id="screen-nav"></span><a href="#">Screen</a></li>
+          <li><span class="img-sprite aside-sprite" id="dating-nav"></span><a href="#">Dating</a></li>
+          <li><span class="img-sprite aside-sprite" id="shopping-nav"></span><a href="#">Shopping</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <style>
+      #story-nav {
+        background: #500095;
+        height: 40px;
+      }
+
+      #story-links {
+        list-style: none;
+      }
+
+      .story-link {
+        float: left;
+        margin: 10px;
+      }
+
+      .story-link a {
+        color: #FFF;
+      }
+    </style>
+    <div id="middle-container" class="left">
+      <section id="story-section">
+        <nav id="story-nav">
+          <ul id="story-links" class="clearfix">
+            <li class="story-link"><a href="#">All Stories</a></li>
+            <li class="story-link"><a href="#">News</a></li>
+            <li class="story-link"><a href="#">Entertainment</a></li>
+            <li class="story-link"><a href="#">Sports</a></li>
+            <li class="story-link"><a href="#">Business</a></li>
+            <li class="story-link"><a href="#">More</a></li>
+          </ul>
+        </nav>
+
+        <style>
+          #stories {
+            list-style: none;
+          }
+
+          .story {
+            margin: 0;
+            display: block;
+            padding: 10px 20px;
+            border: none;
+            border-left: 1px solid #999;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            font-size: 0.8em;
+            height: 80px;
+          }
+
+          .story-img {
+            width: 82px;
+          }
+
+          .story-content {
+            padding-left: 10px;
+            width: 430px;
+          }
+        </style>
+        <ul id="stories">
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+                    <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+          <li class="story clearfix">
+            <img class="left story-img" width="82" height="82" src="https://www.yahoo.com/sy/ts/api/res/1.2/dnX._or5fPOLpZ51A67C7w--/YXBwaWQ9eWhvbWVydW47cT00NTtzbT0xO2ZpPWZpbGw7dz0xNjQ7aD0xNjQ7cHlvZmY9MA--/http://media.zenfs.com/en-US/homerun/bleacher_report_232/6c7c0fc05856684dabe400c14d67ec52.cf.jpg"></img>
+            <div class="left story-content">
+              <h3 class="story-title"><a href="#">UFC Owner Frank Fertitta Slams Belt After Conor McGregor Knocks out Jose Aldo</a></h3>
+              <p class="story-description">Frank Fertitta III, co-owner of the UFC, was caught on camera reacting in intriguing fashion, appearing to slam down the UFC belt, in the immediate</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+
+    <style>
+      .tile {
+        background: #FFF;
+        border: 1px solid #999;
+        margin-top: 10px;
+      }
+
+      .tile-title {
+        font-weight: 300;
+        padding: 5px;
+        border-bottom: 2px solid #00C073;
+      }
+
+      .tile-content {
+        padding: 5px;
+        font-weight: 200;
+      }
+    </style>
+    <aside id="right-container" class="left">
+      <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+            <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+      <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+      <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+      <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+      <div class="tile">
+        <h3 class="tile-title">Blah blah blah</h3>
+        <p class="tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic eligendi, expedita voluptate nihil, inventore eaque aperiam odit explicabo, ea voluptatibus placeat totam numquam, ut ab harum libero eum. Quos.</p>
+      </div>
+
+    </aside>
+  </section>
+  <!-- section: end -->
+</body>
+</html>
