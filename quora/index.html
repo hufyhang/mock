@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mockup: Quora</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif] -->
+</head>
+<body>
+  <header>
+    <div class="container clearfix">
+      <h1 id="logo" class="left"><a href="#">Quora</a></h1>
+      <div class="left">
+        <input id="input" type="text" placeholder="Search for questions, people, and topics">
+        <ul id="result">
+          <li class="result-item">blah blah blah</li>
+          <li class="result-item">blah blah blah</li>
+          <li class="result-item">blah blah blah</li>
+          <li class="result-item">blah blah blah</li>
+          <li class="result-item">blah blah blah</li>
+        </ul>
+      </div>
+      <button class="btn left">Sign In</button>
+    </div>
+  </header>
+
+  <section class="container centered">
+    <h3 id="category"><a href="#">Pete Hunt's Posts</a></h2>
+    <h2 id="title">Facebook's React vs AngularJS: A Closer Look</h2>
+    <span id="author"><a href="#">Pete Hunt</a></span>
+
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corporis voluptatum ex magni veritatis unde adipisci, eaque recusandae optio accusantium vitae, ipsam expedita, et officiis modi voluptate facilis accusamus quidem.</p>
+    </article>
+  </section>
+
+  <script>
+    'use strict';
+    var input = document.getElementById('input');
+    var result = document.getElementById('result');
+
+    input.onclick = function (e) {
+      if (e && e.stopPropagation) {
+        e.stopPropagation();
+      }
+      else if (window.event) {
+        window.event.cancelBubble = true;
+      }
+      result.style.visibility = 'visible';
+    };
+
+    document.body.onclick = function () {
+      result.style.visibility = 'hidden';
+    };
+  </script>
+</body>
+</html>
