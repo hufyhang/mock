@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mockup: Firefox</title>
+  <!-- Original: https://www.mozilla.org/en-GB/firefox/products/ -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    a {text-decoration: none; color: #FFF;}
+    a:link {text-decoration: none; color: #FFF;}
+    a:visited {text-decoration: none; color: #FFF;}
+    a:hover {text-decoration: none; color: #FFF;}
+    a:active {text-decoration: none; color: #FFF;}
+
+    body {
+      position: relative;
+      min-width: 900px;
+      background-color: #0c99d5;
+      background-image: none;
+      background-image: linear-gradient(to bottom,rgba(12,153,213,0) 0,rgba(12,153,213,0) 100px,#0c99d5 450px,#0c99d5),repeating-linear-gradient(118deg,rgba(12,153,213,0) 0,#00a7e0 550px,rgba(12,153,213,0) 550px,#00a7e0 800px,rgba(12,153,213,0) 800px,#00a7e0 950px);
+    }
+
+    .clearfix {
+      zoom: 1;
+    }
+
+    .clearfix::after {
+      clear: both;
+      display: block;
+      content: "";
+      height: 0;
+      visibility: hidden;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .container {
+      position: relative;
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    #products {
+      list-style: none;
+    }
+
+    .product {
+      border-bottom: 1px solid #52c4f5;
+      height: 200px;
+    }
+    .blue {
+      background: #00A7E0;
+    }
+
+    .yellow {
+      background: #FFCD02;
+      background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/promo-bg.b5797cb48efc.png");
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+  <style>
+    #big-wrapper {
+      overflow: hidden;
+      border-top: 2px solid #FFF;
+      position: relative;
+      background: transparent;
+      z-index: 1;
+    }
+
+    header {
+      height: 420px;
+    }
+
+    #logo {
+      position: relative;
+      text-indent: 99em;
+      overflow: hidden;
+      display: block;
+      background-image: url("https://mozorg.cdn.mozilla.net/media/img/tabzilla/tabzilla-static.953a65a1f4a4.png");
+      height: 36px;
+      width: 147px;
+      z-index: 2;
+    }
+
+    #welcome {
+      position: relative;
+      padding: 80px 0;
+      color: #FFF;
+    }
+
+    #welcome h2 {
+      width: 50%;
+      font-weight: 200;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    #welcome::before {
+      display: block;
+      background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/family-sprite-11-2015.dd3d564eaade.png");
+      background-position: -380px 0;
+      background-repeat: no-repeat;
+      width: 108px;
+      height: 112px;
+      content: "";
+      margin-bottom: 30px;
+    }
+
+    header::after {
+      display: block;
+      background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/fox.8814fb259807.png");
+      background-size: 1006px 598px;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      width: 598px;
+      height: 1006px;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%
+    }
+
+    #welcome strong {
+      font-size: 1em;
+      font-weight: 500;
+    }
+  </style>
+  <div id="big-wrapper">
+
+
+    <header class="container">
+      <div id="top-bar clearfix">
+        <a href="#"><h1 id="logo" class="right">Mozilla</h1></a>
+      </div>
+
+      <div id="welcome" class="clearfix">
+        <h2><strong>Free</strong> yourself with <img src="https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/firefox-wordmark.cd142af90113.png" width="330" height="95"></h2>
+      </div>
+    </header>
+
+    <style>
+      .product {
+        position: relative;
+      }
+      .product .container {
+        padding: 60px 20px 40px 550px;
+        font-size: 1.2em;
+      }
+
+      #desktop-prod::before {
+        background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/family-sprite-11-2015.dd3d564eaade.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 360px;
+        height: 200px;
+        bottom: -90px;
+        margin-left: -350px;
+      }
+
+      #android-prod::before {
+        background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/family-sprite-11-2015.dd3d564eaade.png");
+        background-position: 0 -644px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 265px;
+        height: 200px;
+        bottom: -90px;
+        margin-left: -300px;
+      }
+
+
+    </style>
+    <section>
+      <ul id="products">
+        <li class="product blue clearfix">
+          <div id="desktop-prod" class="container clearfix">
+            <a href="#">
+              <h2>Firefox for Desktop</h2>
+              <p>Trusted. Flexible. Fast.</p>
+            </a>
+          </div>
+        </li>
+        <li class="product blue clearfix">
+          <div id="android-prod" class="container clearfix">
+            <a href="#">
+              <h2>Firefox for Android</h2>
+              <p>Trusted. Flexible. Fast.</p>
+            </a>
+          </div>
+
+        </li>
+        <li id="ios-prod" class="product yellow clearfix"></li>
+        <li id="firefox-os-prod" class="product blue clearfix"></li>
+      </ul>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
