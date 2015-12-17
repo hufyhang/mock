@@ -199,3 +199,64 @@ header > .container {
   color: #7F8C8D;
 }
 /*section: end*/
+
+/*section #email*/
+#email {
+  background: #ECF0F1;
+  padding: 50px 0;
+  text-align: center;
+  height: 50px;
+}
+
+#email .container {
+  margin-bottom: 5px;
+}
+
+#email input {
+  width: 700px;
+  font-size: 2em;
+  font-weight: 300;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#email input:focus {
+  outline: none;
+}
+
+#email button {
+height: 56px;
+width: 150px;
+background: #2ECC71;
+color: #FFF;
+border: none;
+border-radius: 6px;
+}
+/*section: end*/
+
+/*footer*/
+footer {
+  background: #1B1F23;
+  height: 200px;
+  color: #FFF;
+  line-height: 200px;
+}
+
+footer span {
+  height: 20px;
+}
+
+#footer-title {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer span {
+  padding: 0 0 0 50px;
+  font-size: 1em;
+  color: #7F8C8D;
+}
+/*footer: end*/
