@@ -197,6 +197,25 @@
         margin-left: -300px;
       }
 
+      #ios-prod::before {
+        background-image: url("https://mozorg.cdn.mozilla.net/media/img/firefox/family/index/family-sprite-11-2015.dd3d564eaade.png");
+        background-position: 0px -815px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 400px;
+        height: 200px;
+        bottom: -50px;
+        margin-left: -400px;
+      }
+
+      #ios-prod > a {
+        color: #E14164;
+      }
+
+
 
     </style>
     <section>
@@ -218,7 +237,15 @@
           </div>
 
         </li>
-        <li id="ios-prod" class="product yellow clearfix"></li>
+        <li class="product yellow clearfix">
+          <div id="ios-prod" class="container clearfix">
+            <a href="#">
+              <h2>Firefox for iOS</h2>
+              <p>Trusted. Flexible. Fast.</p>
+            </a>
+          </div>
+
+        </li>
         <li id="firefox-os-prod" class="product blue clearfix"></li>
       </ul>
 
