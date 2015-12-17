@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-width: 900px;
+}
+
+.container {
+  clear: both;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+a {text-decoration: none; color: #FFF;}
+a:link {text-decoration: none; color: #FFF;}
+a:visited {text-decoration: none; color: #FFF;}
+a:hover {text-decoration: none; color: #FFF;}
+a:active {text-decoration: none; color: #FFF;}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*header*/
+header {
+  background: #233240 url("http://www.hipstafood.com/img/img-1.jpg") 0 no-repeat;
+  height: 500px;
+}
+
+header > .container {
+  padding: 90px 0;
+  text-align: center;
+}
+
+#nav-links {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav-link {
+  margin: 0 20px;
+  font-size: 1.3em;
+}
+
+#main-intro {
+  /*padding: 100px 0;*/
+  padding-top: 100px;
+  color: #FFF;
+  width: 900px;
+}
+
+#main-intro > h2 {
+  font-size: 2.6em;
+  margin-bottom: 30px;
+}
+
+#main-intro > p {
+  font-size: 1.5em;
+  width: 450px;
+  line-height: 40px;
+  margin: 0 auto;
+  color: #BDC3C7;
+  font-weight: 200;
+  background: rgba(78, 77, 77, 0.57);
+  padding: 10px 20px;
+}
+
+/*header: end*/
+
+/*section #app*/
+#app {
+  padding: 40px 0;
+  text-align: center;
+  height: 800px;
+}
+
+#app h2 {
+  color: #34495E;
+  font-size: 2.6em;
+  margin-bottom: 100px;
+}
+
+.table {
+  display: table;
+}
+
+#app-phone, .app-desc {
+  padding: 0 20px;
+  height: 642px;
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 200;
+  color: #7F8C8D;
+}
+
+#phone-screen {
+  display: block;
+  position: relative;
+  top: 90px;
+  left: 5px;
+  width: 260px;
+  height: 496px;
+  background-size: 260px auto;
+  background-image: url("http://www.hipstafood.com/img/hipstafoodApp2@2x.jpg");
+}
+
+.v-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.app-desc .v-center {
+  height: 642px;
+}
+
+.app-desc {
+  width: 230px;
+}
+
+.app-desc h3 {
+  color: #000;
+  font-weight: 200;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.app-desc .content {
+  display: block;
+  margin: 50px 0;
+}
+
+#app-phone {
+  width: 270px;
+  margin: 0 25px;
+  background-image: url("http://www.hipstafood.com/img/iphone.png");
+}
+
+/*section: end*/
+
+
+/*section #ingredients*/
+#ingredients {
+  margin-top: 50px;
+  background-image: url("http://www.hipstafood.com/img/table.jpg");
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 1006px;
+  text-align: center;
+  padding: 300px 0;
+}
+
+.border-heading {
+  color: #FFF;
+  font-size: 2.6em;
+  padding: 20px 10px;
+  border: 10px solid #FFF;
+  width: 700px;
+  margin: 0 auto;
+}
+
+#recept-div {
+  width: 600px;
+  margin-top: 600px;
+}
+
+#recept-div h3 {
+  margin-top: 50px;
+  color: #34495E;
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+#recept-div p {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: #7F8C8D;
+}
+/*section: end*/
